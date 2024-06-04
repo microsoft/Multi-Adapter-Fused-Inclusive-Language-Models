@@ -1,0 +1,4 @@
+recursive-include inclusivity_toolkit *.csv
+recursive-include inclusivity_toolkit *.txt
+recursive-include inclusivity_toolkit *.json
+recursive-include inclusivity_toolkit *.jsonl
