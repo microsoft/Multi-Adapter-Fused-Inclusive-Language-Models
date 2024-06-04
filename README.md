@@ -50,6 +50,14 @@ Each of these debiased adapters can be used for task specific fine-tuning with `
 
 Finally, to fuse multiple adapters on a downstream task, use `src/minimal_task_ft.py`. See `scripts/mafia_all_biases.sh` for more info.
 
+# Transparency Note
+1.	In this study, we explore several methods for debiasing PLMs and evaluate them on various end tasks and languages. These methods are primarily designed for the English language, they may not perform equally well for all languages of the world.
+2.	In this work, we only explore the interplay between a limited set of biases, i.e., gender, race, religion, and profession, and agree that numerous other biases such as cultural and psychological biases have not been addressed. Similarly, we select a limited set of high and low-resource languages for zero-shot evaluation.
+3.	Our CF pairs are limited by the knowledge of text-davinici-003 and presence in WikiData. For computaional efficiency, the number of CF pairs are further reduced on the basis of the frequency of the occurrence of the entities in the pair, in Google Book Corpus.
+4.	We also acknowledge that our AdapterFusion is tuned on the downstream task, which makes it task-specific and not generic.
+5.	We only investigate the effect of fusion on a few downstream tasks, and replicating these findings on other tasks like Bias-NLI would be an interesting study.
+6.	Lastly, we were also constrained by our limited computational resources, as “pretraining” the debiasing adapters consumed a significant time for larger models like RoBERTa and XLM-R.
+
 # Project
 
 > This repo has been populated by an initial template to help get you started. Please
