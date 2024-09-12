@@ -1,5 +1,5 @@
 # Introduction 
-Modular Transfer Learning Approaches for Debiasing LLMs :: [MAFIA](https://arxiv.org/abs/2402.07519)
+Modular Transfer Learning Approaches for Debiasing LLMs :: [Paper](https://arxiv.org/abs/2402.07519)
 
 # Getting Started
 
